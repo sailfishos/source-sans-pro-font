@@ -21,7 +21,7 @@ Requires:   fontconfig
 
 %install
 mkdir -p %{buildroot}/%{_datadir}/fonts/%{fontname}
-install -m 0644 -p *.ttf LICENSE.txt %{buildroot}/%{_datadir}/fonts/%{fontname}
+install -m 0644 -p *.ttf %{buildroot}/%{_datadir}/fonts/%{fontname}
 
 %post
 {
@@ -30,5 +30,6 @@ install -m 0644 -p *.ttf LICENSE.txt %{buildroot}/%{_datadir}/fonts/%{fontname}
 
 %files
 %defattr(-,root,root,0755)
+%license LICENSE.txt
 %{_datadir}/fonts/%{fontname}
 
